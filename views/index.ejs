@@ -1,11 +1,58 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus IT Help Desk</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="/stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark p-3">
+        <div class="container">
+            
+
+
+<a class="navbar-brand" href="/">
+    <span class="helpdesk-logo">
+        <span class="logo-screen">?</span>
+        <span class="logo-stand"></span>
+    </span>
+    Campus IT Help Desk
+</a>
+
+
+
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Campus IT Help Desk</h1>
+
+        <p class="lead">
+            A simple website where students can report
+            technical problems and keep track of their support tickets.
+        </p>
+
+        <p>
+            Having trouble with your computer, internet connection
+            or university software? Create a support ticket
+            to report the issue.
+        </p>
+
+        <a href="/tickets/new" class="btn btn-primary me-2">
+            Create Ticket
+        </a>
+
+        <a href="/tickets" class="btn btn-outline-secondary">
+            View Tickets
+        </a>
+    </div>
+
+</body>
 </html>
