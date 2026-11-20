@@ -60,4 +60,14 @@ router.post('/tickets', function(req, res, next) {
 
 });
 
+
+ // Display the ticket status dashboard
+router.get('/dashboard', function(req, res) {
+  res.render('dashboard', {
+    title: 'Ticket Status Dashboard',
+    tickets: tickets
+  });
+});
+
+
 module.exports = router;
